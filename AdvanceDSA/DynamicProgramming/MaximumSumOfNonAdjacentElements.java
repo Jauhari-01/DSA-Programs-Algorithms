@@ -20,6 +20,11 @@ import java.util.*;
         he strictly follows the rule. Each house has a[i] amount of money present in it.
  * 
  */
+
+//I have added 3 solution for this problem 
+//1 using memoization (Recursion one) --> Time complexity O(n)  // Space --> O(n)+O(n)
+//2 optimize memoization using Tabulation (iteration) --> Time complexity O(n)  // Space --> O(n)
+//3 Optimizing approach(for space in Tabulation) --> Time complexity O(n)  // Space --> O(1)
 public class MaximumSumOfNonAdjacentElements {
 	public static int maximumNonAdjacentSum(ArrayList<Integer> nums) {
 		// Write your code here.
