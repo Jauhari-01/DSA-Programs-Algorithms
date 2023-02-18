@@ -1,7 +1,19 @@
 import java.util.*;
 import java.io.*;
 public class SubsetSumProblem {
-    
+    /*
+     * 
+     * Subset Sum Problem
+        Given an array of integers and a sum, determine if there is a subset of 
+        the array such that the sum of elements in 
+        the subset is equal to the given sum.
+
+        Input
+            5 12
+            1 2 3 7 5
+        Output
+            YES
+    */
 }
 
 class Main {
