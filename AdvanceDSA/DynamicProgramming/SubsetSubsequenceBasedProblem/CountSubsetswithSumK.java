@@ -8,6 +8,27 @@ public class CountSubsetswithSumK {
      *          sum equal to a given sum.
 
             Note: Answer can be very large, so, output answer modulo 109+7 (In GFG)
+
+
+            The difference in the base case between using dp[n][k+1] 
+            and dp[n+1][k+1] is as follows:
+
+            Using dp[n][k+1]: Since the array is zero-indexed, 
+            dp[0][j] should be initialized to 0 for all j from 1 to k, 
+            since there is no subset of an empty array that sums up to a 
+            positive number. However, dp[i][0] should be initialized to 
+            1 for all i from 0 to n-1, since the empty subset has a sum of 0.
+
+            Using dp[n+1][k+1]: Since the array is zero-indexed, dp[0][j] 
+            should be initialized to 0 for all j from 0 to k, since there is 
+            no subset of an empty array that sums up to a positive number. Also, 
+            dp[i][0] should be initialized to 1 for all i from 0 to n, since the 
+            empty subset has a sum of 0.
+
+            As you can see, the difference in the base case is only in the 
+            initialization of dp[0][j] and dp[i][0]. Using dp[n+1][k+1] allows us to 
+            simplify the base case initialization for dp[0][j] and include n=0 in the 
+            same loop as n>=1.
     */
 }
 class Solution {
