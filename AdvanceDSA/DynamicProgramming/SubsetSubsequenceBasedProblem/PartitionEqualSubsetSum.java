@@ -41,6 +41,35 @@ public class PartitionEqualSubsetSum {
 }
 
 class Solution {
+	//optimized method
+	static boolean targetSum(int n,int target,int[] arr){
+		boolean[] pre = new boolean[target+1];
+		boolean[] temp = new boolean[target+1];
+
+		for(int j=0;j<=target;j++) pre[j] = false;
+		pre[0] = true;
+
+		for(int i=1;i<n;i++){
+			temp[0] = true;
+			for(int j=1;j<=target;j++){
+				//
+				if(arr[i] <= j){
+					//we have two choices
+					boolean pick = pre[j-arr[i]];
+					boolean notPic = pre[j];
+					temp[j] = pick||notPic;
+				}else{
+					temp[j] = pre[j]; //not pic only
+				}
+			}
+
+			boolean[] tt = pre;
+			pre = temp;
+			temp = tt;
+		}
+
+		return pre[target];
+	}
 	static boolean subsetSum(int[] arr,boolean[][] dp){
 		//initilization
 		for(int i=0; i<dp.length;i++){
