@@ -1,5 +1,44 @@
 import java.util.*;
+/*
+ * 
+ * Build Min Heap
+        You are given an integer array arr of size n. 
+        Your task is to build a binary min heap from the given array. 
+        You need to just min-heapify the array and return it printing 
+        is handled by the driver code.
 
+        Note
+
+        A binary heap is a complete tree so that it can be represented in array format.
+        The indices for child, parent are:
+        Root is at index 0 in array.
+        Left child of i-th node is at (2*i + 1)th index.
+        Right child of i-th node is at (2*i + 2)th index.
+        Parent of i-th node is at (i-1)/2 index.
+
+
+        Input Format
+            Input consists of two lines.
+            First line contains an integer n which is the size of array
+            Next line contains n spaced integers which are the elements of the array.
+
+        Output Format
+            Change the input array to a heap and implement 
+            this in the buildHeap() function. 
+            The output printed is Correct if your heap is correct. 
+            Otherwise it prints Incorrect.
+
+        Example 1
+        Input
+
+            5
+            4 10 3 5 1
+        Output
+
+            Correct
+ * 
+ * 
+*/
 class Solution {
 
 	//for checking that if array is minHeap or not
