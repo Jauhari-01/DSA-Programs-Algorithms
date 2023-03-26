@@ -6,6 +6,14 @@ public class NQueen1 {
             //    As we know in a row only one queen we can put in nQueen problem
             //    for making it easy we should know how we can put a queen in a row
             //    or how we can place n queens in n rows
+
+            //Time complexity  : O(n^n) 
+            //Because  q1 --- > having nchoices
+                       q2 --- > having nchoices
+                       q3 --- > having nchoices
+                       q4 --- > having nchoices
+                       .......
+                       qn --- > having nchoices
     */
 	public static void main(String[] args) {
 	    int n = 3;
