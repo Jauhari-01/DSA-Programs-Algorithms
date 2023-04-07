@@ -2,6 +2,7 @@ package AdvanceDSA.DynamicProgramming.DpOnStocks;
 public class BuyandSellStocksWithCooldown{
     public static void main(String[] args) {
         //Extension of Buy and Sell stocks - II(infinite transections)
+        //Space optimization not done because it will need three arrays  because of (ind+2)
         /*
          * 
          * We are given an array Arr[] of length n. It represents the price of a stock on ‘n’ days. 
